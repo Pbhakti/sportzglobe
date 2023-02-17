@@ -31,55 +31,89 @@
 	 	</nav>
 	 	<div class="container">
 	 	     <div class= "jumbotron">
-	 	     <form>
+	 	     <form action="C:\xampp\htdocs\connect.php" method="post" >
 	 	     <div class="required-field-header">(<span class="required">*</span>)=Fill it out! Or Else.</div>
-	            *First name:
-	            <br>
-	            <input type="text" name="firstname">
-	            <br>
-	            *Last name:
-	            <br>
-	            <input type ="text" name="lastname">
-	            <br>
-	            *Email:
-	            <br>
-	            <input type ="text" name="email">
-	            <br>
-	            Address:
-	            <br>
-	            <input type ="text" name="address">
-	            <br>
-	            City:
-	            <br>
-	            <input type ="text" name="city">
-	            <br>
-	            State:
-	            <br>
-	            <input type ="text" name="state">
-	            <br>
-	            Phone:
-	            <br>
-	            <input type ="text" name="phone">
-	            <br>
-	            *Username:
-	            <br>
-	            <input type="text" name="username">
-	            <br>
-	            *Password:
-	            <br>
-	            <input type="password" name="password">
-	            <br>
-	            *Confirm Password:
-	            <br>
-	            <input type="password" name="confirmedPassword">
-	            <br> <br>
 	            <div class="form-group">
-                <button type="button" class="btn btn-primary btn-lg">Sign Me Up</button>
+                  
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+                <button type="button" class="btn btn-primary btn-lg" data-dismiss="toast" aria-label="Close">Sign Me Up <span aria-hidden="true">&times;</span></button>
               </div>
 
 	    <br>
 
-	     <footer> &copy; Copyright 2016, iSports News</footer>
+	     <footer> &copy; Copyright 2023, bSports News</footer>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
